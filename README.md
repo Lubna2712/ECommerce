@@ -1,1 +1,1 @@
-# ECommerce
+# ECommerce Static Website
