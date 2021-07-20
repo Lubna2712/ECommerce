@@ -472,92 +472,82 @@
             </div>
           </section>
           <!-- Testimonials -->
-          <section
-            class="testimonials-section"
-            id="carousel"
-            data-ride="carousel"
-          >
+          <section class="testimonials-section d-none">
             <div class="container">
               <h2 class="section-header">Some Happy Allo Store Owners!</h2>
             </div>
-            <div>
-              <img src="images/bgtest.png" alt="" class="bg-test" />
+            <div class="testimonials-wrapper">
+              <div class="testimonials-container container">
+                <div class="testimonials-carousel">
+                  <div class="testimonial-item">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-6">
+                        <img
+                          src="images/t1.jpg"
+                          alt=""
+                          class="test-img img-fluid"
+                        />
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="bg-white test-content">
+                          <h4>
+                            &#8220; Allo Store has helped me service regular
+                            customers while they stayed home. My business could
+                            be run from the kitchen even while we could not have
+                            sit-down customers.&#8221;
+                          </h4>
+                          <p>Restaurant Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial-item">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-6">
+                        <img
+                          src="images/t2.jpg"
+                          alt=""
+                          class="test-img img-fluid"
+                        />
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="bg-white test-content">
+                          <h4>
+                            &#8220; I can service customers anywhere in the city
+                            with MyStore. It even helped me get more orders, as
+                            I could send all my customers and acquaintances
+                            store links on Whatsapp.&#8221;
+                          </h4>
+                          <p>Electrical store owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="testimonial-item">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-6">
+                        <img
+                          src="images/t3.jpg"
+                          alt=""
+                          class="test-img img-fluid"
+                        />
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="bg-white test-content">
+                          <h4>
+                            &#8220; Allo Store has helped me service regular
+                            customers while they stayed home. My business could
+                            be run from the kitchen even while we could not have
+                            sit-down customers..&#8221;
+                          </h4>
+                          <p>Shop Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="owl-carousel testimonials-carousel">
-              <div class="testimonial-item">
-                <div class="row justify-content-center">
-                  <div class="col-lg-6">
-                    <img
-                      src="images/t1.jpg"
-                      alt=""
-                      class="test-img img-fluid"
-                    />
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="bg-white test-content">
-                      <h4>
-                        &#8220; Allo Store has helped me service regular
-                        customers while they stayed home. My business could be
-                        run from the kitchen even while we could not have
-                        sit-down customers.&#8221;
-                      </h4>
-                      <p>Restaurant Owner</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-item">
-                <div class="row justify-content-center">
-                  <div class="col-lg-6">
-                    <img
-                      src="images/t2.png"
-                      alt=""
-                      class="test-img img-fluid"
-                    />
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="bg-white test-content">
-                      <h4>
-                        &#8220; I can service customers anywhere in the city
-                        with MyStore. It even helped me get more orders, as I
-                        could send all my customers and acquaintances store
-                        links on Whatsapp.&#8221;
-                      </h4>
-                      <p>Electrical store owner</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-item">
-                <div class="row justify-content-center">
-                  <div class="col-lg-6">
-                    <img
-                      src="images/t3.png"
-                      alt=""
-                      class="test-img img-fluid"
-                    />
-                  </div>
-                  <div class="col-lg-6">
-                    <div class="bg-white test-content">
-                      <h4>
-                        &#8220; Allo Store has helped me service regular
-                        customers while they stayed home. My business could be
-                        run from the kitchen even while we could not have
-                        sit-down customers..&#8221;
-                      </h4>
-                      <p>Iqbal Rizvi</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="owl-nav">
-              <button type="button" role="presentation" class="owl-prev">
-                <i class="fa fa-chevron-left" aria-hidden="true"></i></button
-              ><button type="button" role="presentation" class="owl-next">
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-              </button>
-            </div> -->
           </section>
           <section class="download-app-banner">
             <div class="container">
@@ -601,14 +591,11 @@
                   </li>
 
                   <li><a href="">Press Inquiry</a></li>
-                  <li><a href="">Banned Items</a></li>
+                  <li><a href="banned-items.html">Banned Items</a></li>
                 </ul>
                 <ul>
                   <li>
                     <a href="" target="_blank" rel="noreferrer">Facebook</a>
-                  </li>
-                  <li>
-                    <a href="" target="_blank" rel="noreferrer">Twitter</a>
                   </li>
                   <li>
                     <a href="" target="_blank" rel="noreferrer">Koo</a>
@@ -668,16 +655,14 @@
             },
           ],
         })
-        $(".testimonials-carousel").owlCarousel({
-          autoplay: false,
-          loop: true,
-          items: 1,
-          dots: false,
-          nav: true,
-          navText: [
-            "<i class='fa fa-chevron-left'></i>",
-            "<i class='fa fa-chevron-right'></i>",
-          ],
+        $(".testimonials-carousel").slick({
+          arrows: true,
+          infinite: true,
+          cssEase: "linear",
+          slidesToShow: 1,
+          // slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 5000,
         })
       })
     </script>
